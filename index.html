@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portafolio web de Flavio Maguiña - Desarrollador Web">
+  <meta name="keywords" content="portafolio, desarrollo web, Flavio Maguiña">
+  <link rel="icon" type="image/x-icon" href="IMAGENES/favicon.ico">
+
+  <title>Portafolio - Flavio Maguiña</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome local (ya lo tenías) -->
+  <link rel="stylesheet" href="IMAGENES/fontawesome-free-7.1.0-web/css/all.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <!-- Header (fixed) -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="/" class="brand" aria-label="Inicio">
+        <img src="IMAGENES/logo.png" alt="Logo de la marca" class="brand-logo" loading="lazy">
+        <span class="brand-name">Flavio Maguiña</span>
+      </a>
+
+      <nav role="navigation" aria-label="Menú principal" class="main-nav">
+        <button class="menu-toggle" id="menuBtn" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav" id="navMenu" aria-hidden="true">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="imagen-fondo" class="hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content hero-glass">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="IMAGENES/yo.jpg" alt="Foto de Flavio Maguiña" loading="lazy">
+          </div>
+
+          <div class="hero-text">
+            <h1>Flavio Maguiña</h1>
+            <h2>Desarrollador Web & Técnico en Computación</h2>
+            <p>Combino precisión técnica y diseño para soluciones eficientes, seguras y visualmente atractivas. Me especializo en optimización de sistemas y desarrollo web adaptativo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- transición suave hacia la siguiente sección -->
+      <div class="transition-fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+      <div class="glass-container">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+          <p>
+            Soy <strong>Técnico en sistemas</strong> con experiencia en armado, mantenimiento y optimización de equipos informáticos. Combino soporte técnico con desarrollo web aplicando buenas prácticas de rendimiento y seguridad.
+          </p>
+          <p>
+            Mi objetivo es entregar soluciones que funcionen y se vean bien: código limpio, configuraciones estables y experiencia de usuario cuidada.
+          </p>
+
+          <div class="skills">
+            <h3>Mis Habilidades</h3>
+            <div class="skill-tags">
+              <span class="skill">Desarrollo Web</span>
+              <span class="skill">Sistemas</span>
+              <span class="skill">Redes</span>
+              <span class="skill">Servidores</span>
+              <span class="skill">IA & Automatización</span>
+              <span class="skill">Soporte Técnico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios-section section">
+      <div class="container-servicios">
+        <h2>Servicios</h2>
+        <p class="subtitulo">Soluciones profesionales en tecnología, mantenimiento y desarrollo web, enfocadas en rendimiento y seguridad.</p>
+
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <h3>Armado y configuración de equipos</h3>
+            <p>Ensamblaje profesional y configuración de sistemas operativos para un rendimiento estable y seguro.</p>
+          </div>
+
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Mantenimiento integral</h3>
+            <p>Diagnóstico, limpieza y optimización de hardware y software para mantener velocidad y fiabilidad.</p>
+          </div>
+
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Seguridad y soporte</h3>
+            <p>Protección, copias de seguridad y soporte técnico personalizado para tus dispositivos y datos.</p>
+          </div>
+
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-download" aria-hidden="true"></i></div>
+            <h3>Instalación de controladores y software</h3>
+            <p>Actualización y configuración de drivers y utilidades esenciales para un funcionamiento óptimo.</p>
+          </div>
+
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Web corporativa</h3>
+            <p>Diseño y desarrollo de sitios web adaptativos con enfoque en identidad y usabilidad.</p>
+          </div>
+
+          <div class="servicio-card">
+            <div class="icono"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+            <h3>Edición con IA</h3>
+            <p>Generación y edición de imágenes y video con herramientas de IA para proyectos creativos y marketing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="proyectos-section section">
+      <div class="container-proyectos">
+        <h2>Proyectos</h2>
+        <p class="subtitulo">Trabajos y desarrollos destacados relacionados con soporte, optimización y desarrollo digital.</p>
+
+        <div class="proyectos-grid">
+          <div class="proyecto-card">
+            <img src="IMAGENES/server.jpg" alt="Server setup" loading="lazy">
+            <h3>Optimización de estaciones</h3>
+            <p>Mejoras de hardware y software para equipos de oficina y producción.</p>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="IMAGENES/web.jpg" alt="Diseño web" loading="lazy">
+            <h3>Web corporativa</h3>
+            <p>Diseño responsivo con énfasis en experiencia y rendimiento.</p>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="IMAGENES/cable.jpeg" alt="Cableado estructurado" loading="lazy">
+            <h3>Cableado estructurado</h3>
+            <p>Orden y optimización de redes físicas para mayor estabilidad.</p>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="IMAGENES/camaras.jpg" alt="Cámaras de seguridad" loading="lazy">
+            <h3>Instalación de cámaras</h3>
+            <p>Integración y configuración de sistemas de video vigilancia.</p>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="IMAGENES/ia.jpg" alt="Automatización IA" loading="lazy">
+            <h3>Automatización con IA</h3>
+            <p>Flujos automatizados y generación de contenido para eficiencia operativa.</p>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="IMAGENES/porfa.jpeg" alt="Portafolio digital" loading="lazy">
+            <h3>Portafolio digital</h3>
+            <p>Diseño personal y presentación de proyectos con foco minimalista y funcional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto-section section">
+      <div class="container-contacto">
+        <h2>Contacto</h2>
+        <p class="subtitulo">Si deseas más información o solicitar un servicio, escríbeme. Respondo en la brevedad.</p>
+
+        <form action="https://formsubmit.co/TU_CORREO@gmail.com" method="POST" class="contacto-form" novalidate>
+          <div class="input-group">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+          </div>
+          <div class="input-group">
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+        </form>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section id="redes" class="redes-section section">
+      <div class="container-redes">
+        <h2 class="titulo-redes">También sígueme en mis redes sociales</h2>
+        <p class="subtitulo">Sigue mi trabajo y novedades en estas plataformas.</p>
+
+        <div class="social-grid">
+          <a href="https://facebook.com/tuusuario" target="_blank" class="social-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i><span>Facebook</span>
+          </a>
+
+          <a href="https://instagram.com/tuusuario" target="_blank" class="social-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+          </a>
+
+          <a href="https://youtube.com/tuusuario" target="_blank" class="social-link" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i><span>YouTube</span>
+          </a>
+
+          <a href="https://github.com/Frozzz-xl" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i><span>GitHub</span>
+          </a>
+
+          <a href="https://twitter.com/tuusuario" target="_blank" class="social-link" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i><span>Twitter (X)</span>
+          </a>
+
+          <a href="https://tiktok.com/@tuusuario" target="_blank" class="social-link" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="parte.js"></script>
+</body>
+</html>
