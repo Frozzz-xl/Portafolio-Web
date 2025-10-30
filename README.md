@@ -69,8 +69,8 @@ Trabajos con inteligencia artificial para creación y mejora de imágenes y vide
 
 ## 📫 Contacto
 
-📧 **Correo:** [flaviomaguina@example.com](mailto:flaviomaguina@example.com)  
-🌎 **Sitio web:** [https://tuusuario.github.io/portafolio-flavio](https://tuusuario.github.io/portafolio-flavio)
+📧 **Correo:** [flaviotabory03@gmail.com](mailto:flaviotabory03@gmail.com)  
+🌎 **Sitio web:** [https://frozzz-xl.github.io/portafolio-web/](https://frozzz-xl.github.io/portafolio-web/)
 
 ---
 
