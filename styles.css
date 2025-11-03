@@ -18,9 +18,19 @@ body{
   font-family:"Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  color: #fff;
-  background: url(IMAGENES/fondo-body.jpg) center/cover no-repeat fixed;
-  overflow-x:hidden;
+  color: #ffffff;
+  background: url(IMAGENES/fondo-body.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* más seguro para móviles */
+  background-color: #060922;
+}
+
+/* Forzar scroll en pantallas pequeñas (móviles) */
+@media (max-width: 900px) {
+  body {
+    background-attachment: scroll !important;
+    background-position: center top;
+  }
 }
 
 
@@ -560,6 +570,52 @@ body{
   background:rgba(255,255,255,0.12); 
 }
 
+/* === FOOTER === */
+.site-footer {
+  width: 100%;
+  background: rgba(0, 20, 60, 0.75);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.4);
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #ff69b4, #00fff2);
+  background-size: 200% 100%;
+  animation: footerGlow 6s linear infinite;
+}
+
+@keyframes footerGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+  opacity: 0.9;
+}
+
+.footer-note {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+}
+
+
 /* ===========================
    Utilities / small screens
    =========================== */
@@ -579,4 +635,58 @@ body{
   100%{background-position:100% 50%} 
 }
 
+/* ---------- Mobile performance fixes (apply last) ---------- */
 
+/* 1) Disable fixed background on small screens */
+@media (max-width: 900px) {
+  body {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+  }
+}
+
+/* 2) Reduce/remove heavy filters & animations on mobile */
+@media (max-width: 900px) {
+  .hero-overlay,
+  .glass-container,
+  .hero-glass,
+  .site-header,
+  .section,
+  .contacto-section,
+  .servicio-card,
+  .proyecto-card,
+  .nav {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    background: rgba(15,20,30,0.65) !important;
+  }
+
+  .titulo-redes,
+  .hero-overlay {
+    animation: none !important;
+  }
+
+  /* slow or pause gradient animations */
+  .hero-overlay {
+    animation-duration: 30s !important;
+    animation-play-state: paused !important;
+  }
+}
+
+/* 3) Fallback for very small heights (avoid overflow issues) */
+@media (max-height: 560px) {
+  #imagen-fondo { padding: 1rem; min-height: auto; }
+  .profile-image { width: 160px; height: 160px; }
+  .hero-text h1 { font-size: 1.8rem; }
+}
+
+@media (max-width: 900px) {
+  .hero-overlay {
+    animation-duration: 30s !important; /* más lento */
+    animation-timing-function: linear !important;
+    animation-play-state: paused; /* puedes comentar esta línea si quieres que siga */
+  }
+}
