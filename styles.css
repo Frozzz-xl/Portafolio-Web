@@ -183,19 +183,22 @@ body{
   }
 
   .nav{
-    position:absolute; 
-    top:100%; 
-    left:0; 
+    position:absolute;
+    top:100%;
+    left:0;
     right:0;
-    flex-direction:column; 
+    flex-direction:column;
     gap:0;
-    background: rgba(10,10,25,0.5);
-    backdrop-filter: blur(12px);
-    max-height:0; 
-    overflow:hidden; 
+    /* Removido fondo y blur para evitar sombreado sobre secciones transparentes */
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    max-height:0;
+    overflow:hidden;
     opacity:0;
     transition: max-height .36s ease, opacity .36s ease;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: none;
   }
 
   .nav.open{ 
@@ -662,6 +665,13 @@ body{
     mix-blend-mode: normal !important;
     box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     background: rgba(15,20,30,0.65) !important;
+  }
+
+  /* Forzar nav transparente en móviles para evitar sombreado sobre el contenido */
+  .nav {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
   }
 
   .titulo-redes,

@@ -256,7 +256,7 @@ accessible-icon:
       - disabled
       - handicap
       - person
-      - uer
+      - user
       - wheelchair
       - wheelchair-alt
   styles:
